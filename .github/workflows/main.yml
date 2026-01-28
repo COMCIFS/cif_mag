@@ -72,20 +72,20 @@ jobs:
       - name: Checkout the multiblockCIF dictionary
         uses: actions/checkout@v4
         with:
-          repository: COMCIFS/MultiBlock_Dictionary
-          path: cif-dictionaries/MultiBlock_Dictionary
+          repository: COMCIFS/cif_multiblock
+          path: cif-dictionaries/cif_multiblock
 
       - name: Checkout the msCIF dictionary
         uses: actions/checkout@v4
         with:
-          repository: COMCIFS/Modulated_Structures
-          path: cif-dictionaries/Modulated_Structures
+          repository: COMCIFS/cif_ms
+          path: cif-dictionaries/cif_ms
 
       - name: Checkout the twinCIF dictionary
         uses: actions/checkout@v4
         with:
-          repository: COMCIFS/Twinning_Dictionary
-          path: cif-dictionaries/Twinning_Dictionary
+          repository: COMCIFS/cif_twin
+          path: cif-dictionaries/cif_twin
 
       - name: Run dictionary validity checks
         uses: COMCIFS/dictionary_check_action@main
