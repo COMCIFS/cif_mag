@@ -11,7 +11,7 @@ data_CIF_MAG
     _dictionary.title             CIF_MAG
     _dictionary.class             Instance
     _dictionary.version           0.9.9
-    _dictionary.date              2026-05-02
+    _dictionary.date              2026-05-28
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   4.1.0
@@ -3134,21 +3134,23 @@ save_
 save_parent_space_group.child_transform_pp_abc
 
     _definition.id                '_parent_space_group.child_transform_Pp_abc'
-    _definition.update            2024-01-19
+    _definition.update            2026-05-28
     _description.text
 ;
     This item specifies the transformation (P,p) of the basis vectors
-    and origin of the present setting of the parent space group to
-    those of the present setting of the  child space group. The basis
-    vectors (a',b',c') of the child are described as linear
-    combinations  of the basis vectors (a,b,c) of the parent, and the
-    origin shift (ox,oy,oz)  is displayed in the lattice coordinates
-    of the parent. The Jones faithful notation and possible values
-    are identical to those of  symCIF:_space_group.transform_Pp_abc,
-    except that the point and translational components are separated
-    by a semicolon.  If the child structure is incommensurate, the
-    transformation applies to the present setting of the basic
-    space group of the incommensurate structure.
+    and origin from the intended setting of the parent space group to
+    the setting of the child space group. The basis vectors (a',b',c')
+    of the setting of the child space group are described as linear
+    combinations of the basis vectors (a,b,c) of the intended setting
+    of the parent space group, and the origin shift (ox,oy,oz) is
+    displayed in the lattice coordinates of the intended setting of
+    the parent space group. The Jones faithful notation and possible
+    values are identical to those of
+    symCIF:_space_group.transform_Pp_abc, except that the point and
+    translational components are separated by a semicolon.  If the
+    child structure is incommensurate, the transformation applies to
+    the setting of the basic space group of the superspace group or
+    magnetic superspace group of the child.
 
     Analogous tags: symCIF:_space_group.transform_Pp_abc.
 ;
@@ -3221,13 +3223,21 @@ save_
 save_parent_space_group.transform_pp_abc
 
     _definition.id                '_parent_space_group.transform_Pp_abc'
-    _definition.update            2024-01-19
+    _definition.update            2026-05-28
     _description.text
 ;
-    Analogous tags: Notation and usage is analogous to
-    symCIF:_space_group.transform_Pp_abc except that it applies to
-    the parent structure, and that the point and translational
-    components are separated by a semicolon.
+    This item specifies the transformation (P,p) of the basis vectors
+    and origin from the intended setting of the parent space group to
+    the standard setting of the parent space group. The basis vectors
+    (a',b',c') of the standard setting are described as linear
+    combinations of the basis vectors (a,b,c) of the intended setting,
+    and the origin shift (ox,oy,oz) is displayed in the lattice
+    coordinates of the intended setting.  The Jones faithful notation
+    and possible values are identical to those of symCIF:
+    _space_group_transform_Pp_abc, except that the point and
+    translational components are separated by a semicolon.
+    Analogous tags:
+    symCIF:_space_group.transform_Pp_abc
 ;
     _name.category_id             parent_space_group
     _name.object_id               transform_Pp_abc
@@ -4312,15 +4322,15 @@ save_
 save_space_group_magn_transforms.pp_abc
 
     _definition.id                '_space_group_magn_transforms.Pp_abc'
-    _definition.update            2023-01-17
+    _definition.update            2026-05-28
     _description.text
 ;
     This item specifies the transformation (P,p) of the basis
-    vectors and origin in the current setting of the CIF file
+    vectors and origin from the current setting of the CIF file
     to the reference setting described by the
     _space_group_magn_transforms.description or
     _space_group_magn_transforms.source tags, and should not
-    be used without this description.  The basis vectors
+    be used without reference settings.  The basis vectors
     (a',b',c') of the reference setting are described as  linear
     combinations of the current basis vectors (a,b,c), and the origin
     shift (ox,oy,oz)  is displayed in the lattice coordinates of the
@@ -4979,7 +4989,7 @@ save_
        _atom_site_moment.Cartn* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2026-05-02
+         0.9.9                    2026-05-28
 ;
        Changed several instances of "Jones-Faithful notation" to
        "Jones faithful notation".
@@ -5031,4 +5041,6 @@ save_
 
        2025-12-04 (bm): Removed ATOM_SITE_FOURIER_WAVE_VECTOR category
        because it is defined in cif_ms.dic.
+
+       Improved clarity in transform_Pp_abc definitions.
 ;
