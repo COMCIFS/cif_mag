@@ -11,7 +11,7 @@ data_CIF_MAG
     _dictionary.title             CIF_MAG
     _dictionary.class             Instance
     _dictionary.version           0.9.9
-    _dictionary.date              2026-05-28
+    _dictionary.date              2026-06-03
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   4.1.0
@@ -47,7 +47,7 @@ save_ATOM_SITE_MOMENT
     _definition.id                ATOM_SITE_MOMENT
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2016-05-24
+    _definition.update            2026-06-03
     _description.text
 ;
     This category provides a loop for presenting the magnetic moments
@@ -58,7 +58,11 @@ save_ATOM_SITE_MOMENT
 ;
     _name.category_id             ATOM_SITE
     _name.object_id               ATOM_SITE_MOMENT
-    _category_key.name            '_atom_site_moment.label'
+
+    loop_
+      _category_key.name
+         '_atom_site_moment.label'
+         '_atom_site_moment.structure_id'
 
 save_
 
@@ -623,6 +627,24 @@ save_atom_site_moment.spherical_polar_su
     _units.code                   degrees
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
+save_atom_site_moment.structure_id
+
+    _definition.id                '_atom_site_moment.structure_id'
+    _definition.update            2026-06-03
+    _description.text
+;
+    A code identifying the structure to which this atom site belongs.
+;
+    _name.category_id             atom_site_moment
+    _name.object_id               structure_id
+    _name.linked_item_id          '_structure.id'
+    _type.purpose                 Link
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Word
 
 save_
 
@@ -4989,7 +5011,7 @@ save_
        _atom_site_moment.Cartn* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2026-05-28
+         0.9.9                    2026-06-03
 ;
        Changed several instances of "Jones-Faithful notation" to
        "Jones faithful notation".
@@ -5043,4 +5065,6 @@ save_
        because it is defined in cif_ms.dic.
 
        Improved clarity in transform_Pp_abc definitions.
+
+       Added _structure.id key to ATOM_SITE_MOMENT
 ;
