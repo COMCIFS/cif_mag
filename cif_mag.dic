@@ -3716,14 +3716,14 @@ save_space_group_magn.point_group_name_uni
 
     loop_
       _description_example.case
-         1.1
-         1.1'
-         -1.1
-         -1.1'
-         -1'
-         4mm.1
-         4'm'm
-         4'mm'
+         "1.1"
+         "1.1'"
+         "-1.1"
+         "-1.1'"
+         "-1'"
+         "4mm.1"
+         "4'm'm"
+         "4'mm'"
 
 save_
 
