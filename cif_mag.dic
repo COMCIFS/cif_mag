@@ -3804,29 +3804,29 @@ save_space_group_magn.ssg_name
     loop_
       _description_example.case
       _description_example.detail
-         Pmmm(0,0,g)ss0
+         "Pmmm(0,0,g)ss0"
 ;
          type-1 MBSG Pmmm
 ;
-         Pmmm.1'(0,0,g)ss00
+         "Pmmm.1'(0,0,g)ss00"
 ;
          type-2 MBSG Pmmm.1', with no basic-cell or
           modulated moments allowed
 ;
-         Pmmm.1'(0,0,g)ss0s
+         "Pmmm.1'(0,0,g)ss0s"
 ;
          type-2 MBSG Pmmm.1', with magnetic modulations
           allowed, but not basic-cell moments
 ;
-         Pm'm'm(0,0,g)ss0
+         "Pm'm'm(0,0,g)ss0"
 ;
          type-3 MBSG Pm'm'm
 ;
-         Pmmm.1'_a(0,0,g)ss00
+         "Pmmm.1'_a(0,0,g)ss00"
 ;
          type-4 MBSG P_ammm with purely external anti-centering
 ;
-         Pmmm.1'_a(0,0,g)ss0s
+         "Pmmm.1'_a(0,0,g)ss0s"
 ;
          type-4 MBSG P_ammm with superspace anti-centering
 ;
