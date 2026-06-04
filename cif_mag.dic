@@ -3886,13 +3886,13 @@ save_space_group_magn.ssg_number
     loop_
       _description_example.case
       _description_example.detail
-         47.1.9.3.m249.1   "Pmmm.1(0,0,g)ss0     SSG = 47.1.9.3, BMSG = 47.249"
-         47.1.9.3.m250.1'  "Pmmm.1'(0,0,g)ss00   SSG = 47.1.9.3, BMSG = 47.250"
-         47.1.9.3.m250.2   "Pmmm.1'(0,0,g)ss0s   SSG = 47.1.9.3, BMSG = 47.250"
-         47.1.9.3.m252.1   "Pm'm'm(0,0,g)ss0     SSG = 47.1.9.3, BMSG = 47.252"
-         47.1.9.3.m254.1   "Pmmm.1'_a(0,0,g)ss00 SSG = 47.1.9.3, BMSG = 47.254"
-         47.1.9.3.m254.2   "Pmmm.1'_c(0,0,g)ss00 SSG = 47.1.9.3, BMSG = 47.254"
-         47.1.9.3.m254.3   "Pmmm.1'_a(0,0,g)ss0s SSG = 47.1.9.3, BMSG = 47.254"
+         "47.1.9.3.m249.1"   "Pmmm.1(0,0,g)ss0     SSG = 47.1.9.3, BMSG = 47.249"
+         "47.1.9.3.m250.1'"  "Pmmm.1'(0,0,g)ss00   SSG = 47.1.9.3, BMSG = 47.250"
+         "47.1.9.3.m250.2"   "Pmmm.1'(0,0,g)ss0s   SSG = 47.1.9.3, BMSG = 47.250"
+         "47.1.9.3.m252.1"   "Pm'm'm(0,0,g)ss0     SSG = 47.1.9.3, BMSG = 47.252"
+         "47.1.9.3.m254.1"   "Pmmm.1'_a(0,0,g)ss00 SSG = 47.1.9.3, BMSG = 47.254"
+         "47.1.9.3.m254.2"   "Pmmm.1'_c(0,0,g)ss00 SSG = 47.1.9.3, BMSG = 47.254"
+         "47.1.9.3.m254.3"   "Pmmm.1'_a(0,0,g)ss0s SSG = 47.1.9.3, BMSG = 47.254"
 
 save_
 
