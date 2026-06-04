@@ -3115,10 +3115,10 @@ save_PARENT_SPACE_GROUP
     could be the lowest-symmetry non-magnetic structure obtained by
     simply setting all magnetic moments to zero, or a higher-symmetry
     approximation to this structure which idealizes some of the
-    atomic coordinates.  The designation of a parent  structure is
+    atomic coordinates. The designation of a parent structure is
     common but optional for a magnetic-structure description. This
     category could also be used to designate high-symmetry parent
-    structures  of low-symmetry non-magnetic structures. As an
+    structures of low-symmetry non-magnetic structures. As an
     alternative to this category, one can define a parent structure
     in a separate data block, and then relate the parent and child
     space-group settings by conveying an appropriate inter-data-block
@@ -3128,6 +3128,7 @@ save_PARENT_SPACE_GROUP
 ;
     _name.category_id             CIF_MAG_HEAD
     _name.object_id               PARENT_SPACE_GROUP
+    _category_key.name            '_parent_space_group.id'
 
 save_
 
@@ -3160,6 +3161,27 @@ save_parent_space_group.child_transform_pp_abc
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
+
+save_
+
+save_parent_space_group.id
+
+    _definition.id                '_parent_space_group.id'
+    _definition.update            2026-06-04
+    _description.text
+;
+    Unique identifier for a parent space group.
+
+    Two space groups can share the same identifier if and only if they have
+    the same space group name, number, setting, and have their their symmetry
+    operations listed with the same symop ids.
+;
+    _name.category_id             parent_space_group
+    _name.object_id               id
+    _type.purpose                 Key
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Word
 
 save_
 
@@ -3615,6 +3637,25 @@ save_space_group_magn.number_og
          2.4.7
          5.5.23
          230.5.1651
+
+save_
+
+save_space_group_magn.parent_space_group_id
+
+    _definition.id                '_space_group_magn.parent_space_group_id'
+    _definition.update            2026-06-04
+    _description.text
+;
+    A code which identifies the relevant parent space group to which the
+    magnetic space group belongs.
+;
+    _name.category_id             space_group_magn
+    _name.object_id               parent_space_group_id
+    _name.linked_item_id          '_parent_space_group.id'
+    _type.purpose                 Link
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Word
 
 save_
 
@@ -5014,6 +5055,9 @@ save_
          0.9.9                    2026-06-04
 ;
        Added key to SPACE_GROUP_MAGN.
+
+       Added key to PARENT_SPACE_GROUP and non-key linked data name to
+       SPACE_GROUP_MAGN
 
        Changed several instances of "Jones-Faithful notation" to
        "Jones faithful notation".
