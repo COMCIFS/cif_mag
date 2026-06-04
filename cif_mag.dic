@@ -1455,13 +1455,13 @@ save_
 
 save_atom_site_moment_fourier.structure_id
 
-    _definition.id                '_atom_site_moment_fourier.structure_id'
+    _definition.id                '_atom_site_moment_Fourier.structure_id'
     _definition.update            2026-06-03
     _description.text
 ;
     A code identifying the structure to which this atom site rotation belongs.
 ;
-    _name.category_id             atom_site_moment_fourier
+    _name.category_id             atom_site_moment_Fourier
     _name.object_id               structure_id
     _name.linked_item_id          '_atom_site_moment.structure_id'
     _type.purpose                 Link
