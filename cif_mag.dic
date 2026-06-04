@@ -5048,7 +5048,7 @@ save_SPACE_GROUP_SYMOP_MAGN_SSG_OPERATION
     _definition.id                SPACE_GROUP_SYMOP_MAGN_SSG_OPERATION
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2024-05-17
+    _definition.update            2026-06-04
     _description.text
 ;
     A looped list of magnetic superspace-group symmetry operations.
@@ -5057,7 +5057,11 @@ save_SPACE_GROUP_SYMOP_MAGN_SSG_OPERATION
 ;
     _name.category_id             CIF_MAG_HEAD
     _name.object_id               SPACE_GROUP_SYMOP_MAGN_SSG_OPERATION
-    _category_key.name            '_space_group_symop_magn_ssg_operation.id'
+
+    loop_
+      _category_key.name
+         '_space_group_symop_magn_ssg_centering.id'
+         '_space_group_symop_magn_ssg_centering.space_group_magn_id'
 
 save_
 
@@ -5139,6 +5143,25 @@ save_space_group_symop_magn_ssg_operation.id
 
 save_
 
+save_space_group_symop_magn_ssg_centering.space_group_magn_id
+
+    _definition.id                '_space_group_symop_magn_ssg_centering.space_group_magn_id'
+    _definition.update            2026-06-04
+    _description.text
+;
+    A code which identifies the relevant space group (MSG) or
+    magnetic superspace group (MSSG) to which the symop belongs.
+;
+    _name.category_id             space_group_symop_magn_ssg_centering
+    _name.object_id               space_group_magn_id
+    _name.linked_item_id          '_space_group_magn.id'
+    _type.purpose                 Link
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Word
+
+save_
+
     loop_
       _dictionary_audit.version
       _dictionary_audit.date
@@ -5200,6 +5223,7 @@ save_
        SPACE_GROUP_SYMOP_MAGN_OG_CENTERING
        SPACE_GROUP_SYMOP_MAGN_OPERATION
        SPACE_GROUP_SYMOP_MAGN_SSG_CENTERING
+       SPACE_GROUP_SYMOP_MAGN_SSG_OPERATION
 
        Added key to PARENT_SPACE_GROUP and linked non-key data name to
        SPACE_GROUP_MAGN
