@@ -3379,15 +3379,15 @@ save_space_group_magn.name_bns
 
     loop_
       _description_example.case
-         P1
-         P11'
-         P_S1
-         P-1
-         P-11'
-         P-1'
-         P_S-1
-         P_C2
-         Ia'-3d'
+         "P1"
+         "P11'"
+         "P_S1"
+         "P-1"
+         "P-11'"
+         "P-1'"
+         "P_S-1"
+         "P_C2"
+         "Ia'-3d'"
 
 save_
 
