@@ -4290,7 +4290,7 @@ save_SPACE_GROUP_MAGN_TRANSFORMS
     _definition.id                SPACE_GROUP_MAGN_TRANSFORMS
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2024-05-17
+    _definition.update            2026-06-04
     _description.text
 ;
     This category provides a list of matrix transformations to multiple
@@ -4301,7 +4301,12 @@ save_SPACE_GROUP_MAGN_TRANSFORMS
 ;
     _name.category_id             CIF_MAG_HEAD
     _name.object_id               SPACE_GROUP_MAGN_TRANSFORMS
-    _category_key.name            '_space_group_magn_transforms.id'
+
+    loop_
+      _category_key.name
+         '_space_group_magn_transforms.id'
+         '_space_group_magn_transforms.space_group_magn_id'
+
     _description_example.case
 ;
        loop_
@@ -4478,6 +4483,25 @@ save_space_group_magn_transforms.source
          The Opechowski-Guccione group setting presented in the Magnetic Group
          Tables of D. B. Litvin.
 ;
+
+save_
+
+save_space_group_magn_transforms.space_group_magn_id
+
+    _definition.id                '_space_group_magn_transforms.space_group_magn_id'
+    _definition.update            2026-06-04
+    _description.text
+;
+    A code which identifies the relevant space group (MSG) or
+    magnetic superspace group (MSSG) to which the transforms belong.
+;
+    _name.category_id             space_group_magn_transforms
+    _name.object_id               space_group_magn_id
+    _name.linked_item_id          '_space_group_magn.id'
+    _type.purpose                 Link
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Word
 
 save_
 
@@ -5078,6 +5102,7 @@ save_
 ;
        Added key to SPACE_GROUP_MAGN, and linked key data names to:
        SPACE_GROUP_MAGN_SSG_TRANSFORMS
+       SPACE_GROUP_MAGN_TRANSFORMS
 
        Added key to PARENT_SPACE_GROUP and linked non-key data name to
        SPACE_GROUP_MAGN
