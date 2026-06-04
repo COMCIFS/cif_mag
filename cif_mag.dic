@@ -11,7 +11,7 @@ data_CIF_MAG
     _dictionary.title             CIF_MAG
     _dictionary.class             Instance
     _dictionary.version           0.9.9
-    _dictionary.date              2026-05-28
+    _dictionary.date              2026-06-04
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   4.1.0
@@ -3253,7 +3253,7 @@ save_SPACE_GROUP_MAGN
     _definition.id                SPACE_GROUP_MAGN
     _definition.scope             Category
     _definition.class             Set
-    _definition.update            2024-05-17
+    _definition.update            2026-06-04
     _description.text
 ;
     The data items in this category provide identifying and/or
@@ -3293,6 +3293,7 @@ save_SPACE_GROUP_MAGN
 ;
     _name.category_id             CIF_MAG_HEAD
     _name.object_id               SPACE_GROUP_MAGN
+    _category_key.name            '_space_group_magn.id'
 
 save_
 
@@ -3337,6 +3338,27 @@ save_space_group_magn.hall_symbol
          "-P 1 1'c"               "BNS = 2.7   UNI = P-1.1'_c"
          "P 2y 1'C"               "BNS = 3.6   UNI = P2.1'_C"
          "I 4bd 2c 3 -1'"         "BNS = 230.1 UNI = Ia'-3'd'"
+
+save_
+
+save_space_group_magn.id
+
+    _definition.id                '_space_group_magn.id'
+    _definition.update            2026-06-04
+    _description.text
+;
+    Unique identifier for a magnetic space group.
+
+    Two space groups can share the same identifier if and only if they have
+    the same magnetic space group name, number, setting, and have their their
+    transformations and symmetry operations listed with the same ids.
+;
+    _name.category_id             space_group_magn
+    _name.object_id               id
+    _type.purpose                 Key
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Word
 
 save_
 
@@ -4989,8 +5011,10 @@ save_
        _atom_site_moment.Cartn* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2026-05-28
+         0.9.9                    2026-06-04
 ;
+       Added key to SPACE_GROUP_MAGN.
+
        Changed several instances of "Jones-Faithful notation" to
        "Jones faithful notation".
 
