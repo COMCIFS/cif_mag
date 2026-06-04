@@ -3431,15 +3431,15 @@ save_space_group_magn.name_og
 
     loop_
       _description_example.case
-         P1
-         P11'
-         P_S1
-         P-1
-         P-11'
-         P-1'
-         P_2s-1
-         C_P2
-         Ia'-3'd'
+         "P1"
+         "P11'"
+         "P_S1"
+         "P-1"
+         "P-11'"
+         "P-1'"
+         "P_2s-1"
+         "C_P2"
+         "Ia'-3'd'"
 
 save_
 
