@@ -11,7 +11,7 @@ data_CIF_MAG
     _dictionary.title             CIF_MAG
     _dictionary.class             Instance
     _dictionary.version           0.9.9
-    _dictionary.date              2026-06-04
+    _dictionary.date              2026-06-07
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   4.1.0
@@ -3268,6 +3268,25 @@ save_parent_space_group.reference_setting
 
 save_
 
+save_parent_space_group.space_group_id
+
+    _definition.id                '_parent_space_group.space_group_id'
+    _definition.update            2026-06-07
+    _description.text
+;
+    A code which identifies the space group to which the parent space group
+    refers.
+;
+    _name.category_id             parent_space_group
+    _name.object_id               space_group_id
+    _name.linked_item_id          '_space_group.id'
+    _type.purpose                 Link
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Word
+
+save_
+
 save_parent_space_group.transform_pp_abc
 
     _definition.id                '_parent_space_group.transform_Pp_abc'
@@ -5240,8 +5259,10 @@ save_
        _atom_site_moment.Cartn* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2026-06-04
+         0.9.9                    2026-06-07
 ;
+       Added lionked non-key data item _parent_space_group.space_group_id.
+
        Added key to SPACE_GROUP_MAGN, and linked key data names to:
        SPACE_GROUP_MAGN_SSG_TRANSFORMS
        SPACE_GROUP_MAGN_TRANSFORMS
