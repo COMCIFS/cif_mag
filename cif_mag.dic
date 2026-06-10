@@ -5200,7 +5200,7 @@ save_
        SPACE_GROUP_SYMOP_MAGN_SSG_OPERATION
 
        Added non-key _structure.space_group_magn_id to link magnetic space
-       group to structure
+       group to structure.
 
        Changed several instances of "Jones-Faithful notation" to
        "Jones faithful notation".
