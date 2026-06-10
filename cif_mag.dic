@@ -5117,6 +5117,25 @@ save_space_group_symop_magn_ssg_centering.space_group_magn_id
 
 save_
 
+save_structure.space_group_magn_id
+
+    _definition.id                '_structure.space_group_magn_id'
+    _definition.update            2026-06-10
+    _description.text
+;
+    A code which identifies the magnetic space group associated with the
+    structure.
+;
+    _name.category_id             structure
+    _name.object_id               space_group_magn_id
+    _name.linked_item_id          '_space_group_magn.id'
+    _type.purpose                 Link
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Word
+
+save_
+
     loop_
       _dictionary_audit.version
       _dictionary_audit.date
@@ -5180,8 +5199,8 @@ save_
        SPACE_GROUP_SYMOP_MAGN_SSG_CENTERING
        SPACE_GROUP_SYMOP_MAGN_SSG_OPERATION
 
-       Added key to PARENT_SPACE_GROUP and linked non-key data name to
-       SPACE_GROUP_MAGN
+       Added non-key _structure.space_group_magn_id to link magnetic space
+       group to structure
 
        Changed several instances of "Jones-Faithful notation" to
        "Jones faithful notation".
