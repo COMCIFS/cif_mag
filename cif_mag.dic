@@ -3681,25 +3681,6 @@ save_space_group_magn.number_og
 
 save_
 
-save_space_group_magn.parent_space_group_id
-
-    _definition.id                '_space_group_magn.parent_space_group_id'
-    _definition.update            2026-06-04
-    _description.text
-;
-    A code which identifies the relevant parent space group to which the
-    magnetic space group belongs.
-;
-    _name.category_id             space_group_magn
-    _name.object_id               parent_space_group_id
-    _name.linked_item_id          '_parent_space_group.id'
-    _type.purpose                 Link
-    _type.source                  Assigned
-    _type.container               Single
-    _type.contents                Word
-
-save_
-
 save_space_group_magn.og_wavevector_kxkykz
 
     _definition.id                '_space_group_magn.OG_wavevector_kxkykz'
