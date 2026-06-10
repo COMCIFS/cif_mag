@@ -3190,6 +3190,25 @@ save_parent_space_group.child_transform_pp_abc
 
 save_
 
+save_parent_space_group.child_space_group_id
+
+    _definition.id                '_parent_space_group.child_space_group_id'
+    _definition.update            2024-06-10
+    _description.text
+;
+    A code which identifies the child space group to which the parent space
+    group refers.
+;
+    _name.category_id             parent_space_group
+    _name.object_id               child_space_group_id
+    _name.linked_item_id          '_space_group.id'
+    _type.purpose                 Link
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Word
+
+save_
+
 save_parent_space_group.id
 
     _definition.id                '_parent_space_group.id'
@@ -3282,6 +3301,7 @@ save_parent_space_group.space_group_id
     _type.contents                Word
 
 save_
+
 save_parent_space_group.transform_pp_abc
 
     _definition.id                '_parent_space_group.transform_Pp_abc'
