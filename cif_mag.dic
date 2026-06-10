@@ -3128,7 +3128,6 @@ save_PARENT_SPACE_GROUP
 ;
     _name.category_id             CIF_MAG_HEAD
     _name.object_id               PARENT_SPACE_GROUP
-    _category_key.name            '_parent_space_group.id'
 
 save_
 
@@ -3161,27 +3160,6 @@ save_parent_space_group.child_transform_pp_abc
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
-
-save_
-
-save_parent_space_group.id
-
-    _definition.id                '_parent_space_group.id'
-    _definition.update            2026-06-04
-    _description.text
-;
-    Unique identifier for a parent space group.
-
-    Two space groups can share the same identifier if and only if they have
-    the same space group name, number, setting, and have their their symmetry
-    operations listed with the same symop ids.
-;
-    _name.category_id             parent_space_group
-    _name.object_id               id
-    _type.purpose                 Key
-    _type.source                  Assigned
-    _type.container               Single
-    _type.contents                Word
 
 save_
 
