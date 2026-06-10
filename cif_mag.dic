@@ -5072,10 +5072,13 @@ save_
        _atom_site_moment.Cartn* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2026-05-28
+         0.9.9                    2026-06-10
 ;
        Added key to PARENT_SPACE_GROUP, and linked key data name to
-       PARENT_PROPAGATION_VECTOR.
+       PARENT_PROPAGATION_VECTOR. Added linked, non-key data items to
+       PARENT_SPACE_GROUP, _parent_space_group.space_group_id to designate
+       the parent and _parent_space_group.child_space_group_magn_id to
+       designate the child.
 
        Changed several instances of "Jones-Faithful notation" to
        "Jones faithful notation".
