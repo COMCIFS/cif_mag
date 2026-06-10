@@ -11,7 +11,7 @@ data_CIF_MAG
     _dictionary.title             CIF_MAG
     _dictionary.class             Instance
     _dictionary.version           0.9.9
-    _dictionary.date              2026-06-04
+    _dictionary.date              2026-06-10
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   4.1.0
@@ -5188,7 +5188,7 @@ save_
        _atom_site_moment.Cartn* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2026-06-04
+         0.9.9                    2026-06-10
 ;
        Added key to SPACE_GROUP_MAGN, and linked key data names to:
        SPACE_GROUP_MAGN_SSG_TRANSFORMS
