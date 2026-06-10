@@ -11,7 +11,7 @@ data_CIF_MAG
     _dictionary.title             CIF_MAG
     _dictionary.class             Instance
     _dictionary.version           0.9.9
-    _dictionary.date              2026-05-28
+    _dictionary.date              2024-06-10
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   4.1.0
@@ -3039,7 +3039,7 @@ save_PARENT_PROPAGATION_VECTOR
     _definition.id                PARENT_PROPAGATION_VECTOR
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2024-05-17
+    _definition.update            2024-06-10
     _description.text
 ;
     This looped category allows for the presentation of the
@@ -3050,9 +3050,15 @@ save_PARENT_PROPAGATION_VECTOR
 ;
     _name.category_id             CIF_MAG_HEAD
     _name.object_id               PARENT_PROPAGATION_VECTOR
-    _category_key.name            '_parent_propagation_vector.id'
+
+    loop_
+      _category_key.name
+         '_parent_propagation_vector.id'
+         '_parent_propagation_vector.parent_space_group_id'
+
     _description_example.case
 ;
+    _parent_space_group.id  A
     loop_
       _parent_propagation_vector.id
       _parent_propagation_vector.kxkykz
@@ -3100,12 +3106,32 @@ save_parent_propagation_vector.kxkykz
 
 save_
 
+save_parent_propagation_vector.parent_space_group_id
+
+    _definition.id
+        '_parent_propagation_vector.parent_space_group_id'
+    _definition.update            2024-06-10
+    _description.text
+;
+    A code which identifies the relevant parent space group to which the
+    parent propagation vector belongs.
+;
+    _name.category_id             parent_propagation_vector
+    _name.object_id               parent_space_group_id
+    _name.linked_item_id          '_parent_space_group.id'
+    _type.purpose                 Link
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Word
+
+save_
+
 save_PARENT_SPACE_GROUP
 
     _definition.id                PARENT_SPACE_GROUP
     _definition.scope             Category
     _definition.class             Set
-    _definition.update            2024-05-17
+    _definition.update            2024-06-10
     _description.text
 ;
     This category provides information about the space group and
@@ -3128,6 +3154,7 @@ save_PARENT_SPACE_GROUP
 ;
     _name.category_id             CIF_MAG_HEAD
     _name.object_id               PARENT_SPACE_GROUP
+    _category_key.name            '_parent_space_group.id'
 
 save_
 
@@ -3160,6 +3187,23 @@ save_parent_space_group.child_transform_pp_abc
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
+
+save_
+
+save_parent_space_group.id
+
+    _definition.id                '_parent_space_group.id'
+    _definition.update            2024-06-10
+    _description.text
+;
+    Arbitrary unique identifier for a parent space group.
+;
+    _name.category_id             parent_space_group
+    _name.object_id               id
+    _type.purpose                 Key
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Word
 
 save_
 
@@ -4991,6 +5035,9 @@ save_
 ;
          0.9.9                    2026-05-28
 ;
+       Added key to PARENT_SPACE_GROUP, and linked key data name to
+       PARENT_PROPAGATION_VECTOR.
+
        Changed several instances of "Jones-Faithful notation" to
        "Jones faithful notation".
 
