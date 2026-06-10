@@ -3270,7 +3270,7 @@ save_parent_space_group.transform_pp_abc
 
 save_
 
-save_
+save_SPACE_GROUP_MAGN
 
     _definition.id                SPACE_GROUP_MAGN
     _definition.scope             Category
