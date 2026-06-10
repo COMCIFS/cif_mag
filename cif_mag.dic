@@ -3105,7 +3105,7 @@ save_PARENT_SPACE_GROUP
     _definition.id                PARENT_SPACE_GROUP
     _definition.scope             Category
     _definition.class             Set
-    _definition.update            2026-06-04
+    _definition.update            2024-05-17
     _description.text
 ;
     This category provides information about the space group and
