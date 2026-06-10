@@ -3039,26 +3039,20 @@ save_PARENT_PROPAGATION_VECTOR
     _definition.id                PARENT_PROPAGATION_VECTOR
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2026-06-04
+    _definition.update            2024-05-17
     _description.text
 ;
     This looped category allows for the presentation of the
     fundamental magnetic wave vectors in the setting of the parent
-    structure. In general, there can be more than one fundamental
+    structure.  In general, there can be more than one fundamental
     magnetic wave vector. See the PARENT_SPACE_GROUP category for
     more information about parent space groups.
 ;
     _name.category_id             CIF_MAG_HEAD
     _name.object_id               PARENT_PROPAGATION_VECTOR
-
-    loop_
-      _category_key.name
-         '_parent_propagation_vector.id'
-         '_parent_propagation_vector.parent_space_group_id'
-
+    _category_key.name            '_parent_propagation_vector.id'
     _description_example.case
 ;
-    _parent_space_group.id  A
     loop_
       _parent_propagation_vector.id
       _parent_propagation_vector.kxkykz
@@ -3103,26 +3097,6 @@ save_parent_propagation_vector.kxkykz
     _type.dimension               '[3]'
     _type.contents                Real
     _units.code                   none
-
-save_
-
-save_parent_propagation_vector.parent_space_group_id
-
-    _definition.id
-        '_parent_propagation_vector.parent_space_group_id'
-    _definition.update            2026-06-04
-    _description.text
-;
-    A code which identifies the relevant parent space group to which the
-    parent propagation vector belongs.
-;
-    _name.category_id             parent_propagation_vector
-    _name.object_id               parent_space_group_id
-    _name.linked_item_id          '_parent_space_group.id'
-    _type.purpose                 Link
-    _type.source                  Assigned
-    _type.container               Single
-    _type.contents                Word
 
 save_
 
@@ -5249,8 +5223,7 @@ save_
        SPACE_GROUP_SYMOP_MAGN_SSG_CENTERING
        SPACE_GROUP_SYMOP_MAGN_SSG_OPERATION
 
-       Added key to PARENT_SPACE_GROUP, linked key data name to
-       PARENT_PROPAGATION_VECTOR, and linked non-key data name to
+       Added key to PARENT_SPACE_GROUP and linked non-key data name to
        SPACE_GROUP_MAGN
 
        Changed several instances of "Jones-Faithful notation" to
