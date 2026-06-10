@@ -3039,7 +3039,7 @@ save_PARENT_PROPAGATION_VECTOR
     _definition.id                PARENT_PROPAGATION_VECTOR
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2024-06-10
+    _definition.update            2026-06-10
     _description.text
 ;
     This looped category allows for the presentation of the
@@ -3110,7 +3110,7 @@ save_parent_propagation_vector.parent_space_group_id
 
     _definition.id
         '_parent_propagation_vector.parent_space_group_id'
-    _definition.update            2024-06-10
+    _definition.update            2026-06-10
     _description.text
 ;
     A code which identifies the relevant parent space group to which the
@@ -3131,7 +3131,7 @@ save_PARENT_SPACE_GROUP
     _definition.id                PARENT_SPACE_GROUP
     _definition.scope             Category
     _definition.class             Set
-    _definition.update            2024-06-10
+    _definition.update            2026-06-10
     _description.text
 ;
     This category provides information about the space group and
@@ -3194,7 +3194,7 @@ save_parent_space_group.child_space_group_magn_id
 
     _definition.id
         '_parent_space_group.child_space_group_magn_id'
-    _definition.update            2024-06-10
+    _definition.update            2026-06-10
     _description.text
 ;
     A code which identifies the child magnetic space group to which the
@@ -3213,7 +3213,7 @@ save_
 save_parent_space_group.id
 
     _definition.id                '_parent_space_group.id'
-    _definition.update            2024-06-10
+    _definition.update            2026-06-10
     _description.text
 ;
     Arbitrary unique identifier for a parent space group.
@@ -3287,7 +3287,7 @@ save_
 save_parent_space_group.space_group_id
 
     _definition.id                '_parent_space_group.space_group_id'
-    _definition.update            2024-06-10
+    _definition.update            2026-06-10
     _description.text
 ;
     A code which identifies the space group to which the parent space group
