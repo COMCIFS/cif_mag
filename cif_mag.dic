@@ -3315,7 +3315,7 @@ save_parent_space_group.transform_pp_abc
 
 save_
 
-save_SPACE_GROUP_MAGN
+save_
 
     _definition.id                SPACE_GROUP_MAGN
     _definition.scope             Category
@@ -3414,11 +3414,7 @@ save_space_group_magn.id
     _definition.update            2026-06-04
     _description.text
 ;
-    Unique identifier for a magnetic space group.
-
-    Two space groups can share the same identifier if and only if they have
-    the same magnetic space group name, number, setting, and have their their
-    transformations and symmetry operations listed with the same ids.
+    Arbitrary unique identifier for a magnetic space group.
 ;
     _name.category_id             space_group_magn
     _name.object_id               id
