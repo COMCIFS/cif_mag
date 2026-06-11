@@ -3253,7 +3253,7 @@ save_SPACE_GROUP_MAGN
     _definition.id                SPACE_GROUP_MAGN
     _definition.scope             Category
     _definition.class             Set
-    _definition.update            
+    _definition.update            2026-06-04
     _description.text
 ;
     The data items in this category provide identifying and/or
