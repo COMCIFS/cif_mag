@@ -3253,7 +3253,7 @@ save_SPACE_GROUP_MAGN
     _definition.id                SPACE_GROUP_MAGN
     _definition.scope             Category
     _definition.class             Set
-    _definition.update            2026-06-04
+    _definition.update            
     _description.text
 ;
     The data items in this category provide identifying and/or
@@ -3347,7 +3347,7 @@ save_space_group_magn.id
     _definition.update            2026-06-04
     _description.text
 ;
-    Arbitrary unique identifier for a magnetic space group/superspace group
+    Arbitrary unique identifier for a magnetic space group/superspace group.
 ;
     _name.category_id             space_group_magn
     _name.object_id               id
@@ -5123,9 +5123,8 @@ save_structure.space_group_magn_id
     _definition.update            2026-06-10
     _description.text
 ;
-    A code which identifies the magnetic space group or magnetic superspace group 
-    describing the
-    structure.
+    A code which identifies the magnetic space group or magnetic superspace 
+    group describing the structure.
 ;
     _name.category_id             structure
     _name.object_id               space_group_magn_id
