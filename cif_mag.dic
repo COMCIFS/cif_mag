@@ -3347,7 +3347,7 @@ save_space_group_magn.id
     _definition.update            2026-06-04
     _description.text
 ;
-    Arbitrary unique identifier for a magnetic space group.
+    Arbitrary unique identifier for a magnetic space group/superspace group
 ;
     _name.category_id             space_group_magn
     _name.object_id               id
@@ -4572,7 +4572,7 @@ save_space_group_symop_magn_centering.space_group_magn_id
     _description.text
 ;
     A code which identifies the relevant space group (MSG) or
-    magnetic superspace group (MSSG) to which the symop belongs.
+    magnetic superspace group (MSSG) to which the centering belongs.
 ;
     _name.category_id             space_group_symop_magn_centering
     _name.object_id               space_group_magn_id
@@ -4697,7 +4697,7 @@ save_space_group_symop_magn_og_centering.space_group_magn_id
     _description.text
 ;
     A code which identifies the relevant space group (MSG) or
-    magnetic superspace group (MSSG) to which the symop belongs.
+    magnetic superspace group (MSSG) to which the centering belongs.
 ;
     _name.category_id             space_group_symop_magn_OG_centering
     _name.object_id               space_group_magn_id
@@ -4819,7 +4819,7 @@ save_space_group_symop_magn_operation.space_group_magn_id
     _description.text
 ;
     A code which identifies the relevant space group (MSG) or
-    magnetic superspace group (MSSG) to which the symop belongs.
+    magnetic superspace group (MSSG) to which the operation belongs.
 ;
     _name.category_id             space_group_symop_magn_operation
     _name.object_id               space_group_magn_id
@@ -4986,7 +4986,7 @@ save_space_group_symop_magn_ssg_centering.space_group_magn_id
     _description.text
 ;
     A code which identifies the relevant space group (MSG) or
-    magnetic superspace group (MSSG) to which the symop belongs.
+    magnetic superspace group (MSSG) to which the centering belongs.
 ;
     _name.category_id             space_group_symop_magn_ssg_centering
     _name.object_id               space_group_magn_id
@@ -5105,7 +5105,7 @@ save_space_group_symop_magn_ssg_centering.space_group_magn_id
     _description.text
 ;
     A code which identifies the relevant space group (MSG) or
-    magnetic superspace group (MSSG) to which the symop belongs.
+    magnetic superspace group (MSSG) to which the centering belongs.
 ;
     _name.category_id             space_group_symop_magn_ssg_centering
     _name.object_id               space_group_magn_id
@@ -5123,7 +5123,8 @@ save_structure.space_group_magn_id
     _definition.update            2026-06-10
     _description.text
 ;
-    A code which identifies the magnetic space group associated with the
+    A code which identifies the magnetic space group or magnetic superspace group 
+    describing the
     structure.
 ;
     _name.category_id             structure
