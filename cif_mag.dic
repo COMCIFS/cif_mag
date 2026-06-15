@@ -11,7 +11,7 @@ data_CIF_MAG
     _dictionary.title             CIF_MAG
     _dictionary.class             Instance
     _dictionary.version           0.9.9
-    _dictionary.date              2026-05-28
+    _dictionary.date              2026-06-15
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   4.1.0
@@ -5009,7 +5009,7 @@ save_
        _atom_site_moment.Cartn* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2026-05-28
+         0.9.9                    2026-06-15
 ;
        Changed several instances of "Jones-Faithful notation" to
        "Jones faithful notation".
@@ -5063,4 +5063,7 @@ save_
        because it is defined in cif_ms.dic.
 
        Improved clarity in transform_Pp_abc definitions.
+
+       2026-06-15: added _atom_sites_moment_fourier.structure_id as linked
+       key data name.
 ;
