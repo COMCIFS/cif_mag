@@ -5015,8 +5015,8 @@ save_SPACE_GROUP_SYMOP_MAGN_SSG_OPERATION
 
     loop_
       _category_key.name
-         '_space_group_symop_magn_ssg_centering.id'
-         '_space_group_symop_magn_ssg_centering.space_group_magn_id'
+         '_space_group_symop_magn_ssg_operation.id'
+         '_space_group_symop_magn_ssg_operation.space_group_magn_id'
 
 save_
 
@@ -5098,17 +5098,17 @@ save_space_group_symop_magn_ssg_operation.id
 
 save_
 
-save_space_group_symop_magn_ssg_centering.space_group_magn_id
+save_space_group_symop_magn_ssg_operation.space_group_magn_id
 
     _definition.id
-        '_space_group_symop_magn_ssg_centering.space_group_magn_id'
+        '_space_group_symop_magn_ssg_operation.space_group_magn_id'
     _definition.update            2026-06-04
     _description.text
 ;
     A code which identifies the relevant space group (MSG) or
-    magnetic superspace group (MSSG) to which the centering belongs.
+    magnetic superspace group (MSSG) to which the operation belongs.
 ;
-    _name.category_id             space_group_symop_magn_ssg_centering
+    _name.category_id             space_group_symop_magn_ssg_operation
     _name.object_id               space_group_magn_id
     _name.linked_item_id          '_space_group_magn.id'
     _type.purpose                 Link
