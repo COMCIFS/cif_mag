@@ -2369,7 +2369,7 @@ save_ATOM_SITES_MOMENT_FOURIER
     _definition.id                ATOM_SITES_MOMENT_FOURIER
     _definition.scope             Category
     _definition.class             Set
-    _definition.update            2024-05-17
+    _definition.update            2026-06-15
     _description.text
 ;
     Data items in the ATOM_SITES_MOMENT_FOURIER category record
@@ -2384,6 +2384,7 @@ save_ATOM_SITES_MOMENT_FOURIER
 ;
     _name.category_id             CIF_MAG_HEAD
     _name.object_id               ATOM_SITES_MOMENT_FOURIER
+    _category_key.name            '_atom_sites_moment_Fourier.structure_id'
 
 save_
 
@@ -2416,6 +2417,25 @@ save_atom_sites_moment_fourier.axes_description
      Extracted from Baudour & Sanquer
      [Acta Cryst. (1983), B39, 75-84].
 ;
+
+save_
+
+save_atom_sites_moment_fourier.structure_id
+
+    _definition.id                '_atom_sites_moment_Fourier.structure_id'
+    _definition.update            2026-06-15
+    _description.text
+;
+    A code identifying the crystallographic structure associated with the
+    magnetic modulations for the atom sites description.
+;
+    _name.category_id             atom_sites_moment_Fourier
+    _name.object_id               structure_id
+    _name.linked_item_id          '_structure.id'
+    _type.purpose                 Link
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Word
 
 save_
 
