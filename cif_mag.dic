@@ -4223,7 +4223,8 @@ save_
 
 save_space_group_magn_ssg_transforms.space_group_magn_id
 
-    _definition.id                '_space_group_magn_ssg_transforms.space_group_magn_id'
+    _definition.id
+        '_space_group_magn_ssg_transforms.space_group_magn_id'
     _definition.update            2026-06-04
     _description.text
 ;
@@ -4443,7 +4444,8 @@ save_
 
 save_space_group_magn_transforms.space_group_magn_id
 
-    _definition.id                '_space_group_magn_transforms.space_group_magn_id'
+    _definition.id
+        '_space_group_magn_transforms.space_group_magn_id'
     _definition.update            2026-06-04
     _description.text
 ;
@@ -4567,7 +4569,8 @@ save_
 
 save_space_group_symop_magn_centering.space_group_magn_id
 
-    _definition.id                '_space_group_symop_magn_centering.space_group_magn_id'
+    _definition.id
+        '_space_group_symop_magn_centering.space_group_magn_id'
     _definition.update            2026-06-04
     _description.text
 ;
@@ -4692,7 +4695,8 @@ save_
 
 save_space_group_symop_magn_og_centering.space_group_magn_id
 
-    _definition.id                '_space_group_symop_magn_OG_centering.space_group_magn_id'
+    _definition.id
+        '_space_group_symop_magn_OG_centering.space_group_magn_id'
     _definition.update            2026-06-04
     _description.text
 ;
@@ -4814,7 +4818,8 @@ save_
 
 save_space_group_symop_magn_operation.space_group_magn_id
 
-    _definition.id                '_space_group_symop_magn_operation.space_group_magn_id'
+    _definition.id
+        '_space_group_symop_magn_operation.space_group_magn_id'
     _definition.update            2026-06-04
     _description.text
 ;
@@ -4981,7 +4986,8 @@ save_
 
 save_space_group_symop_magn_ssg_centering.space_group_magn_id
 
-    _definition.id                '_space_group_symop_magn_ssg_centering.space_group_magn_id'
+    _definition.id
+        '_space_group_symop_magn_ssg_centering.space_group_magn_id'
     _definition.update            2026-06-04
     _description.text
 ;
@@ -5124,7 +5130,7 @@ save_structure.space_group_magn_id
     _definition.update            2026-06-10
     _description.text
 ;
-    A code which identifies the magnetic space group or magnetic superspace 
+    A code which identifies the magnetic space group or magnetic superspace
     group describing the structure.
 ;
     _name.category_id             structure
