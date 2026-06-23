@@ -1348,7 +1348,7 @@ save_ATOM_SITE_MOMENT_FOURIER
     _definition.id                ATOM_SITE_MOMENT_FOURIER
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2024-05-17
+    _definition.update            2026-06-03
     _description.text
 ;
     Data items in the ATOM_SITE_MOMENT_FOURIER category record
@@ -1360,7 +1360,11 @@ save_ATOM_SITE_MOMENT_FOURIER
 ;
     _name.category_id             CIF_MAG_HEAD
     _name.object_id               ATOM_SITE_MOMENT_FOURIER
-    _category_key.name            '_atom_site_moment_Fourier.id'
+
+    loop_
+      _category_key.name
+         '_atom_site_moment_Fourier.id'
+         '_atom_site_moment_Fourier.structure_id'
 
 save_
 
@@ -1459,7 +1463,7 @@ save_atom_site_moment_fourier.structure_id
     _definition.update            2026-06-03
     _description.text
 ;
-    A code identifying the structure to which this atom site rotation belongs.
+    A code identifying the structure to which this atom site moment belongs.
 ;
     _name.category_id             atom_site_moment_Fourier
     _name.object_id               structure_id
@@ -5282,6 +5286,9 @@ save_
 ;
          0.9.9                    2026-06-10
 ;
+       Added _structure.id key to ATOM_SITE_MOMENT, ATOM_SITE_ROTATION,
+       ATOM_SITE_MOMENT_FOURIER, ATOM_SITE_MOMENT_SPECIAL_FUNC.
+
        Added key to SPACE_GROUP_MAGN, and linked key data names to:
        SPACE_GROUP_MAGN_SSG_TRANSFORMS
        SPACE_GROUP_MAGN_TRANSFORMS
@@ -5347,8 +5354,4 @@ save_
 
        Improved clarity in transform_Pp_abc definitions.
 
-       Added _structure.id key to ATOM_SITE_MOMENT, ATOM_SITE_ROTATION, and
-       ATOM_SITE_MOMENT_SPECIAL_FUNC.
-
-       Added _structure.id as linked data name in ATOM_SITE_MOMENT_FOURIER.
 ;
