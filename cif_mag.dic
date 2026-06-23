@@ -1527,7 +1527,6 @@ save_ATOM_SITE_MOMENT_FOURIER_PARAM
 ;
     _name.category_id             ATOM_SITE_MOMENT_FOURIER
     _name.object_id               ATOM_SITE_MOMENT_FOURIER_PARAM
-    _category_key.name            '_atom_site_moment_Fourier_param.id'
     _description_example.case
 ;
     loop_
@@ -2061,6 +2060,7 @@ save_atom_site_moment_fourier_param.sin_symmform
 
 save_
 
+save_atom_site_moment_fourier_param.structure_id
 save_ATOM_SITE_MOMENT_SPECIAL_FUNC
 
     _definition.id                ATOM_SITE_MOMENT_SPECIAL_FUNC
