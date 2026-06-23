@@ -1527,6 +1527,12 @@ save_ATOM_SITE_MOMENT_FOURIER_PARAM
 ;
     _name.category_id             ATOM_SITE_MOMENT_FOURIER
     _name.object_id               ATOM_SITE_MOMENT_FOURIER_PARAM
+
+    loop_
+      _category_key.name
+         '_atom_site_moment_Fourier_param.id'
+         '_atom_site_moment_Fourier_param.structure_id'
+
     _description_example.case
 ;
     loop_
@@ -2061,6 +2067,25 @@ save_atom_site_moment_fourier_param.sin_symmform
 save_
 
 save_atom_site_moment_fourier_param.structure_id
+
+    _definition.id
+        '_atom_site_moment_Fourier_param.structure_id'
+    _definition.update            2026-06-03
+    _description.text
+;
+    A code identifying the structure to which this atom site moment
+    Fourier parameter belongs.
+;
+    _name.category_id             atom_site_moment_Fourier_param
+    _name.object_id               structure_id
+    _name.linked_item_id          '_atom_site_moment.structure_id'
+    _type.purpose                 Link
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Word
+
+save_
+
 save_ATOM_SITE_MOMENT_SPECIAL_FUNC
 
     _definition.id                ATOM_SITE_MOMENT_SPECIAL_FUNC
