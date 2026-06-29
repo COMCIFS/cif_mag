@@ -11,7 +11,7 @@ data_CIF_MAG
     _dictionary.title             CIF_MAG
     _dictionary.class             Instance
     _dictionary.version           0.9.9
-    _dictionary.date              2026-06-10
+    _dictionary.date              2026-06-15
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   4.1.0
@@ -2483,7 +2483,7 @@ save_ATOM_SITES_MOMENT_FOURIER
     _definition.id                ATOM_SITES_MOMENT_FOURIER
     _definition.scope             Category
     _definition.class             Set
-    _definition.update            2024-05-17
+    _definition.update            2026-06-15
     _description.text
 ;
     Data items in the ATOM_SITES_MOMENT_FOURIER category record
@@ -2498,6 +2498,7 @@ save_ATOM_SITES_MOMENT_FOURIER
 ;
     _name.category_id             CIF_MAG_HEAD
     _name.object_id               ATOM_SITES_MOMENT_FOURIER
+    _category_key.name            '_atom_sites_moment_Fourier.structure_id'
 
 save_
 
@@ -2530,6 +2531,25 @@ save_atom_sites_moment_fourier.axes_description
      Extracted from Baudour & Sanquer
      [Acta Cryst. (1983), B39, 75-84].
 ;
+
+save_
+
+save_atom_sites_moment_fourier.structure_id
+
+    _definition.id                '_atom_sites_moment_Fourier.structure_id'
+    _definition.update            2026-06-15
+    _description.text
+;
+    A code identifying the crystallographic structure associated with the
+    magnetic modulations for the atom sites description.
+;
+    _name.category_id             atom_sites_moment_Fourier
+    _name.object_id               structure_id
+    _name.linked_item_id          '_structure.id'
+    _type.purpose                 Link
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Word
 
 save_
 
@@ -5309,7 +5329,7 @@ save_
        _atom_site_moment.Cartn* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2026-06-10
+         0.9.9                    2026-06-15
 ;
        Added _structure.id key to ATOM_SITE_MOMENT, ATOM_SITE_ROTATION,
        ATOM_SITE_MOMENT_FOURIER, ATOM_SITE_MOMENT_SPECIAL_FUNC.
@@ -5379,4 +5399,6 @@ save_
 
        Improved clarity in transform_Pp_abc definitions.
 
+       2026-06-15: added _atom_sites_moment_fourier.structure_id as linked
+       key data name.
 ;
