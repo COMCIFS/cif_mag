@@ -47,7 +47,7 @@ save_ATOM_SITE_MOMENT
     _definition.id                ATOM_SITE_MOMENT
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2016-05-24
+    _definition.update            2026-06-03
     _description.text
 ;
     This category provides a loop for presenting the magnetic moments
@@ -58,7 +58,11 @@ save_ATOM_SITE_MOMENT
 ;
     _name.category_id             ATOM_SITE
     _name.object_id               ATOM_SITE_MOMENT
-    _category_key.name            '_atom_site_moment.label'
+
+    loop_
+      _category_key.name
+         '_atom_site_moment.label'
+         '_atom_site_moment.structure_id'
 
 save_
 
@@ -626,6 +630,24 @@ save_atom_site_moment.spherical_polar_su
 
 save_
 
+save_atom_site_moment.structure_id
+
+    _definition.id                '_atom_site_moment.structure_id'
+    _definition.update            2026-06-03
+    _description.text
+;
+    A code identifying the structure to which this atom site moment belongs.
+;
+    _name.category_id             atom_site_moment
+    _name.object_id               structure_id
+    _name.linked_item_id          '_structure.id'
+    _type.purpose                 Link
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Word
+
+save_
+
 save_atom_site_moment.symmform
 
     _definition.id                '_atom_site_moment.symmform'
@@ -669,7 +691,7 @@ save_ATOM_SITE_ROTATION
     _definition.id                ATOM_SITE_ROTATION
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2018-07-18
+    _definition.update            2026-06-03
     _description.text
 ;
     This category provides a loop for presenting atom-site axial-vector
@@ -688,7 +710,11 @@ save_ATOM_SITE_ROTATION
 ;
     _name.category_id             ATOM_SITE
     _name.object_id               ATOM_SITE_ROTATION
-    _category_key.name            '_atom_site_rotation.label'
+
+    loop_
+      _category_key.name
+         '_atom_site_rotation.label'
+         '_atom_site_rotation.structure_id'
 
 save_
 
@@ -1261,6 +1287,24 @@ save_atom_site_rotation.spherical_polar_su
 
 save_
 
+save_atom_site_rotation.structure_id
+
+    _definition.id                '_atom_site_rotation.structure_id'
+    _definition.update            2026-06-03
+    _description.text
+;
+    A code identifying the structure to which this atom site rotation belongs.
+;
+    _name.category_id             atom_site_rotation
+    _name.object_id               structure_id
+    _name.linked_item_id          '_structure.id'
+    _type.purpose                 Link
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Word
+
+save_
+
 save_atom_site_rotation.symmform
 
     _definition.id                '_atom_site_rotation.symmform'
@@ -1304,7 +1348,7 @@ save_ATOM_SITE_MOMENT_FOURIER
     _definition.id                ATOM_SITE_MOMENT_FOURIER
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2024-05-17
+    _definition.update            2026-06-03
     _description.text
 ;
     Data items in the ATOM_SITE_MOMENT_FOURIER category record
@@ -1316,7 +1360,11 @@ save_ATOM_SITE_MOMENT_FOURIER
 ;
     _name.category_id             CIF_MAG_HEAD
     _name.object_id               ATOM_SITE_MOMENT_FOURIER
-    _category_key.name            '_atom_site_moment_Fourier.id'
+
+    loop_
+      _category_key.name
+         '_atom_site_moment_Fourier.id'
+         '_atom_site_moment_Fourier.structure_id'
 
 save_
 
@@ -1326,7 +1374,8 @@ save_atom_site_moment_fourier.atom_site_label
     _definition.update            2016-05-24
     _description.text
 ;
-    This string uniquely identifies the atom for which the Fourier
+    This string, in conjunction with _atom_site_moment_fourier.structure_id,
+    uniquely identifies the atom for which the Fourier
     modulation  components are to be specified.  The Fourier
     modulation components are always presented in a separate loop
     (not in the ATOM_SITE loop).  This string must match an
@@ -1408,6 +1457,24 @@ save_atom_site_moment_fourier.id
 
 save_
 
+save_atom_site_moment_fourier.structure_id
+
+    _definition.id                '_atom_site_moment_Fourier.structure_id'
+    _definition.update            2026-06-03
+    _description.text
+;
+    A code identifying the structure to which this atom site moment belongs.
+;
+    _name.category_id             atom_site_moment_Fourier
+    _name.object_id               structure_id
+    _name.linked_item_id          '_atom_site_moment.structure_id'
+    _type.purpose                 Link
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Word
+
+save_
+
 save_atom_site_moment_fourier.wave_vector_seq_id
 
     _definition.id                '_atom_site_moment_Fourier.wave_vector_seq_id'
@@ -1460,7 +1527,12 @@ save_ATOM_SITE_MOMENT_FOURIER_PARAM
 ;
     _name.category_id             ATOM_SITE_MOMENT_FOURIER
     _name.object_id               ATOM_SITE_MOMENT_FOURIER_PARAM
-    _category_key.name            '_atom_site_moment_Fourier_param.id'
+
+    loop_
+      _category_key.name
+         '_atom_site_moment_Fourier_param.id'
+         '_atom_site_moment_Fourier_param.structure_id'
+
     _description_example.case
 ;
     loop_
@@ -1994,12 +2066,31 @@ save_atom_site_moment_fourier_param.sin_symmform
 
 save_
 
+save_atom_site_moment_fourier_param.structure_id
+
+    _definition.id                '_atom_site_moment_Fourier_param.structure_id'
+    _definition.update            2026-06-03
+    _description.text
+;
+    A code identifying the structure to which this atom site moment
+    Fourier parameter belongs.
+;
+    _name.category_id             atom_site_moment_Fourier_param
+    _name.object_id               structure_id
+    _name.linked_item_id          '_atom_site_moment.structure_id'
+    _type.purpose                 Link
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Word
+
+save_
+
 save_ATOM_SITE_MOMENT_SPECIAL_FUNC
 
     _definition.id                ATOM_SITE_MOMENT_SPECIAL_FUNC
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2024-05-17
+    _definition.update            2026-06-03
     _description.text
 ;
     Data items in the ATOM_SITE_MOMENT_SPECIAL_FUNC category record
@@ -2027,8 +2118,11 @@ save_ATOM_SITE_MOMENT_SPECIAL_FUNC
 ;
     _name.category_id             CIF_MAG_HEAD
     _name.object_id               ATOM_SITE_MOMENT_SPECIAL_FUNC
-    _category_key.name
-        '_atom_site_moment_special_func.atom_site_label'
+
+    loop_
+      _category_key.name
+         '_atom_site_moment_special_func.atom_site_label'
+         '_atom_site_moment_special_func.structure_id'
 
 save_
 
@@ -2361,6 +2455,25 @@ save_atom_site_moment_special_func.sawtooth_w_su
     _units.code                   Bohr_magnetons
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
+save_atom_site_moment_special_func.structure_id
+
+    _definition.id                '_atom_site_moment_special_func.structure_id'
+    _definition.update            2026-06-03
+    _description.text
+;
+    A code identifying the structure to which this atom site moment
+    special function belongs.
+;
+    _name.category_id             atom_site_moment_special_func
+    _name.object_id               structure_id
+    _name.linked_item_id          '_structure.id'
+    _type.purpose                 Link
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Word
 
 save_
 
@@ -5217,6 +5330,9 @@ save_
 ;
          0.9.9                    2026-06-15
 ;
+       Added _structure.id key to ATOM_SITE_MOMENT, ATOM_SITE_ROTATION,
+       ATOM_SITE_MOMENT_FOURIER, ATOM_SITE_MOMENT_SPECIAL_FUNC.
+
        Added key to SPACE_GROUP_MAGN, and linked key data names to:
        SPACE_GROUP_MAGN_SSG_TRANSFORMS
        SPACE_GROUP_MAGN_TRANSFORMS
