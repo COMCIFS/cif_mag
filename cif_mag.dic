@@ -11,7 +11,7 @@ data_CIF_MAG
     _dictionary.title             CIF_MAG
     _dictionary.class             Instance
     _dictionary.version           0.9.9
-    _dictionary.date              2026-06-15
+    _dictionary.date              2026-07-04
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   4.1.0
@@ -5168,25 +5168,25 @@ save_
       _dictionary_author.name
       _dictionary_author.id_orcid
       _dictionary_author.email
-         1               'Campbell, Branton J.'             .
+         1            'Campbell, Branton J.'               .
          .
-         2               'Perez-Mato, J. Manuel'            .
+         2            'Perez-Mato, J. Manuel'              .
          .
-         3               'Petříček, Václav'                 .
+         3            'Petříček, Václav'                   .
          petricek@fzu.cz
-         4               'Rodriguez-Carvajal, Juan'         .
+         4            'Rodriguez-Carvajal, Juan'           .
          .
-         5               'Sikora, Wiesława'                 .
+         5            'Sikora, Wiesława'                   .
          .
-         6               'Stokes, Harold T.'                .
+         6            'Stokes, Harold T.'                  .
          .
-         7               'McMahon, Brian'                   0000-0003-0391-0002
+         7            'McMahon, Brian'                     0000-0003-0391-0002
          .
-         8               'Hester, James R.'                 0000-0002-2004-8672
+         8            'Hester, James R.'                   0000-0002-2004-8672
          jxh@ansto.gov.au
-         9               'Vaitkus, Antanas'                 0000-0002-5944-1391
+         9            'Vaitkus, Antanas'                   0000-0002-5944-1391
          antanas.vaitkus@bti.vu.lt
-         10              'Rowles, Matthew R.'               0000-0002-7448-6774
+         10           'Rowles, Matthew R.'                 0000-0002-7448-6774
          .
 
     loop_
@@ -5241,7 +5241,7 @@ save_
        _atom_site_moment.Cartn* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2026-06-15
+         0.9.9                    2026-07-04
 ;
        Added key to SPACE_GROUP_MAGN, and linked key data names to:
        SPACE_GROUP_MAGN_SSG_TRANSFORMS
@@ -5310,4 +5310,6 @@ save_
 
        2026-06-15: added _atom_sites_moment_fourier.structure_id as linked
        key data name.
+
+       Added author list.
 ;
