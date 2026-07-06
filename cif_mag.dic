@@ -5164,6 +5164,32 @@ save_structure.space_group_magn_id
 save_
 
     loop_
+      _dictionary_author.id
+      _dictionary_author.name
+      _dictionary_author.id_orcid
+      _dictionary_author.email
+         1               'Campbell, Branton J.'             .
+         .
+         2               'Perez-Mato, J. Manuel'            .
+         .
+         3               'Petříček, Václav'                 .
+         petricek@fzu.cz
+         4               'Rodriguez-Carvajal, Juan'         .
+         .
+         5               'Sikora, Wiesława'                 .
+         .
+         6               'Stokes, Harold T.'                .
+         .
+         7               'McMahon, Brian'                   0000-0003-0391-0002
+         .
+         8               'Hester, James R.'                 0000-0002-2004-8672
+         jxh@ansto.gov.au
+         9               'Vaitkus, Antanas'                 0000-0002-5944-1391
+         antanas.vaitkus@bti.vu.lt
+         10              'Rowles, Matthew R.'               0000-0002-7448-6774
+         .
+
+    loop_
       _dictionary_audit.version
       _dictionary_audit.date
       _dictionary_audit.revision
