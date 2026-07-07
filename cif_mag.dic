@@ -14,7 +14,8 @@ data_CIF_MAG
     _dictionary.date              2026-07-07
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
-    _dictionary.ddl_conformance   4.1.0
+    _dictionary.ddl_conformance   4.2.0
+    _dictionary.licensing_SPDX    CC-BY-4.0
     _dictionary.namespace         CifCore
     _description.text
 ;
