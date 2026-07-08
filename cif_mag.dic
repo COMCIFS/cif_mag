@@ -1375,13 +1375,13 @@ save_atom_site_moment_fourier.atom_site_label
     _definition.update            2016-05-24
     _description.text
 ;
-    This string, in conjunction with _atom_site_moment_fourier.structure_id,
+    This string, in conjunction with _atom_site_moment_Fourier.structure_id,
     uniquely identifies the atom for which the Fourier
     modulation  components are to be specified.  The Fourier
     modulation components are always presented in a separate loop
     (not in the ATOM_SITE loop).  This string must match an
     _atom_site.label from the ATOM_SITE loop, and otherwise conform
-    to the rules for _atom_site_label.
+    to the rules for _atom_site.label.
 ;
     _name.category_id             atom_site_moment_Fourier
     _name.object_id               atom_site_label
@@ -1489,10 +1489,10 @@ save_atom_site_moment_fourier.wave_vector_seq_id
     ATOM_SITE_FOURIER_WAVE_VECTOR loop.
 
     Analogous tags:
-    msCIF:_atom_site_displace_Fourier_wave_vector.seq_id,
-    msCIF:_atom_site_rot_Fourier_wave_vector.seq_id,
-    msCIF:_atom_site_occ_Fourier_wave_vector.seq_id,
-    msCIF:_atom_site_U_Fourier_wave_vector.seq_id.
+    msCIF:_atom_site_displace_Fourier.wave_vector_seq_id,
+    msCIF:_atom_site_rot_Fourier.wave_vector_seq_id,
+    msCIF:_atom_site_occ_Fourier.wave_vector_seq_id,
+    msCIF:_atom_site_U_Fourier.wave_vector_seq_id.
 ;
     _name.category_id             atom_site_moment_Fourier
     _name.object_id               wave_vector_seq_id
@@ -1851,7 +1851,7 @@ save_atom_site_moment_fourier_param.phase
     or sine components. This parameter will be unitless regardless of
     the coordinate system used.
 
-    Analogous tags: msCIF:_atom_site_displacive_Fourier_param.phase,
+    Analogous tags: msCIF:_atom_site_displace_Fourier_param.phase,
     msCIF:_atom_site_rot_Fourier_param.phase,
     msCIF:_atom_site_occ_Fourier_param.phase,
     msCIF:_atom_site_U_Fourier_param.phase.
@@ -3154,7 +3154,7 @@ save_atom_type_scat.neutron_magnetic_source
     Reference to the source of magnetic neutron scattering factors
     for a given atom type.
 
-    Analogous tags: coreCIF:_atom_site.scat_source.
+    Analogous tags: coreCIF:_atom_type.scat_source.
 ;
     _name.category_id             atom_type_scat
     _name.object_id               neutron_magnetic_source
@@ -3940,7 +3940,7 @@ save_space_group_magn.ssg_name
      unique MSSG identifier rather than relying on the MSSG symbol alone.
      The examples are based on SSG 47.1.9.3 Pmmm(0,0,g)ss0 in (3+1)D.
 
-    Analogous tags: msCIF:_space_group.ssg_name.
+    Analogous tags: msCIF:_superspace_group.name.
 
     Ref: ISO-MAG tables of H. T. Stokes and B. J. Campbell at
     https://iso.byu.edu.
@@ -4913,7 +4913,7 @@ save_space_group_symop_magn_og_centering.xyz
     A parsable string giving one of the centering operations of the
     OG(k)-supercell  description of a magnetic space group in
     algebraic form.  The form of such a string  is identical to that
-    expected for _space_group_symop_operation.xyz, except that the
+    expected for _space_group_symop.operation_xyz, except that the
     rotational part of a translation must always be the identity
     element. The magnetic component of the centering vector is not
     given in the value of this tag, but should instead be separately
@@ -5233,7 +5233,7 @@ save_space_group_symop_magn_ssg_operation.algebraic
     respectively. This tag is intended for use with the BNS
     description of the magnetic basic cell.
 
-    Analogous tags: msCIF:_space_group_symop.ssg_operation_algebraic.
+    Analogous tags: msCIF:_superspace_group_symop.operation_algebraic.
 ;
     _name.category_id             space_group_symop_magn_ssg_operation
     _name.object_id               algebraic
@@ -5284,7 +5284,7 @@ save_space_group_symop_magn_ssg_operation.id
     The _space_group_symop_magn_ssg.id alias provides backwards
     compatibility with the established magCIF prototype.
 
-    Analogous tags: msCIF:_space_group_symop_ssg_id.
+    Analogous tags: msCIF:_superspace_group_symop.id.
 ;
     _name.category_id             space_group_symop_magn_ssg_operation
     _name.object_id               id
