@@ -11,7 +11,7 @@ data_CIF_MAG
     _dictionary.title             CIF_MAG
     _dictionary.class             Instance
     _dictionary.version           0.9.9
-    _dictionary.date              2026-07-07
+    _dictionary.date              2026-07-08
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   4.2.0
@@ -634,18 +634,12 @@ save_
 save_atom_site_moment.structure_id
 
     _definition.id                '_atom_site_moment.structure_id'
-    _definition.update            2026-06-03
-    _description.text
-;
-    A code identifying the structure to which this atom site moment belongs.
-;
     _name.category_id             atom_site_moment
     _name.object_id               structure_id
     _name.linked_item_id          '_atom_site.structure_id'
-    _type.purpose                 Link
-    _type.source                  Assigned
-    _type.container               Single
-    _type.contents                Word
+
+    _import.get
+        [{'file':templ_attr.cif  'save':structure_id_key_no_linked}]
 
 save_
 
@@ -1291,18 +1285,12 @@ save_
 save_atom_site_rotation.structure_id
 
     _definition.id                '_atom_site_rotation.structure_id'
-    _definition.update            2026-06-03
-    _description.text
-;
-    A code identifying the structure to which this atom site rotation belongs.
-;
     _name.category_id             atom_site_rotation
     _name.object_id               structure_id
     _name.linked_item_id          '_atom_site.structure_id'
-    _type.purpose                 Link
-    _type.source                  Assigned
-    _type.container               Single
-    _type.contents                Word
+
+    _import.get
+        [{'file':templ_attr.cif  'save':structure_id_key_no_linked}]
 
 save_
 
@@ -1461,18 +1449,12 @@ save_
 save_atom_site_moment_fourier.structure_id
 
     _definition.id                '_atom_site_moment_Fourier.structure_id'
-    _definition.update            2026-06-03
-    _description.text
-;
-    A code identifying the structure to which this atom site moment belongs.
-;
     _name.category_id             atom_site_moment_Fourier
     _name.object_id               structure_id
     _name.linked_item_id          '_atom_site_moment.structure_id'
-    _type.purpose                 Link
-    _type.source                  Assigned
-    _type.container               Single
-    _type.contents                Word
+
+    _import.get
+        [{'file':templ_attr.cif  'save':structure_id_key_no_linked}]
 
 save_
 
@@ -2071,19 +2053,12 @@ save_
 save_atom_site_moment_fourier_param.structure_id
 
     _definition.id                '_atom_site_moment_Fourier_param.structure_id'
-    _definition.update            2026-06-03
-    _description.text
-;
-    A code identifying the structure to which this atom site moment
-    Fourier parameter belongs.
-;
     _name.category_id             atom_site_moment_Fourier_param
     _name.object_id               structure_id
     _name.linked_item_id          '_atom_site_moment_Fourier.structure_id'
-    _type.purpose                 Link
-    _type.source                  Assigned
-    _type.container               Single
-    _type.contents                Word
+
+    _import.get
+        [{'file':templ_attr.cif  'save':structure_id_key_no_linked}]
 
 save_
 
@@ -2463,19 +2438,11 @@ save_
 save_atom_site_moment_special_func.structure_id
 
     _definition.id                '_atom_site_moment_special_func.structure_id'
-    _definition.update            2026-06-03
-    _description.text
-;
-    A code identifying the structure to which this atom site moment
-    special function belongs.
-;
     _name.category_id             atom_site_moment_special_func
     _name.object_id               structure_id
-    _name.linked_item_id          '_structure.id'
-    _type.purpose                 Link
-    _type.source                  Assigned
-    _type.container               Single
-    _type.contents                Word
+
+    _import.get
+        [{'file':templ_attr.cif  'save':structure_id_key}]
 
 save_
 
@@ -2538,19 +2505,11 @@ save_
 save_atom_sites_moment_fourier.structure_id
 
     _definition.id                '_atom_sites_moment_Fourier.structure_id'
-    _definition.update            2026-06-15
-    _description.text
-;
-    A code identifying the crystallographic structure associated with the
-    magnetic modulations for the atom sites description.
-;
     _name.category_id             atom_sites_moment_Fourier
     _name.object_id               structure_id
-    _name.linked_item_id          '_structure.id'
-    _type.purpose                 Link
-    _type.source                  Assigned
-    _type.container               Single
-    _type.contents                Word
+
+    _import.get
+        [{'file':templ_attr.cif  'save':structure_id_key}]
 
 save_
 
@@ -5412,7 +5371,7 @@ save_
        _atom_site_moment.Cartn* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2026-07-07
+         0.9.9                    2026-07-08
 ;
        Added _structure.id key to ATOM_SITE_MOMENT, ATOM_SITE_ROTATION,
        ATOM_SITE_MOMENT_FOURIER, ATOM_SITE_MOMENT_SPECIAL_FUNC.
