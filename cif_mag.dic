@@ -11,7 +11,7 @@ data_CIF_MAG
     _dictionary.title             CIF_MAG
     _dictionary.class             Instance
     _dictionary.version           0.9.9
-    _dictionary.date              2026-07-07
+    _dictionary.date              2026-07-16
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   4.2.0
@@ -3281,13 +3281,13 @@ save_parent_space_group.child_transform_pp_abc
     displayed in the lattice coordinates of the intended setting of
     the parent space group. The Jones faithful notation and possible
     values are identical to those of
-    symCIF:_space_group.transform_Pp_abc, except that the point and
+    coreCIF:_space_group.transform_Pp_abc, except that the point and
     translational components are separated by a semicolon.  If the
     child structure is incommensurate, the transformation applies to
     the setting of the basic space group of the superspace group or
     magnetic superspace group of the child.
 
-    Analogous tags: symCIF:_space_group.transform_Pp_abc.
+    Analogous tags: coreCIF:_space_group.transform_Pp_abc.
 ;
     _name.category_id             parent_space_group
     _name.object_id               child_transform_Pp_abc
@@ -3343,7 +3343,7 @@ save_parent_space_group.reference_setting
     _description.text
 ;
     Analogous tags: Perfectly analogous to
-    symCIF:_space_group.reference_setting except that it applies to
+    coreCIF:_space_group.reference_setting except that it applies to
     the parent structure.
 ;
     _name.category_id             parent_space_group
@@ -3368,11 +3368,11 @@ save_parent_space_group.transform_pp_abc
     combinations of the basis vectors (a,b,c) of the intended setting,
     and the origin shift (ox,oy,oz) is displayed in the lattice
     coordinates of the intended setting.  The Jones faithful notation
-    and possible values are identical to those of symCIF:
-    _space_group_transform_Pp_abc, except that the point and
+    and possible values are identical to those of
+    coreCIF:_space_group.transform_Pp_abc, except that the point and
     translational components are separated by a semicolon.
     Analogous tags:
-    symCIF:_space_group.transform_Pp_abc
+    coreCIF:_space_group.transform_Pp_abc
 ;
     _name.category_id             parent_space_group
     _name.object_id               transform_Pp_abc
@@ -4110,11 +4110,11 @@ save_space_group_magn.transform_bns_pp_abc
     vectors (a,b,c), and the origin shift (ox,oy,oz) is displayed
     in the lattice coordinates of the current setting. The
     Jones faithful notation and possible values are identical
-    to those of symCIF:_space_group.transform_Pp_abc,
+    to those of coreCIF:_space_group.transform_Pp_abc,
     except that the point and translational components are separated
     by a semicolon.
 
-    Analogous tags: symCIF:_space_group.transform_Pp_abc.
+    Analogous tags: coreCIF:_space_group.transform_Pp_abc.
 
     Ref: ISO-MAG tables of H. T. Stokes and B. J. Campbell at
     https://iso.byu.edu.
@@ -4178,10 +4178,10 @@ save_space_group_magn.transform_og_pp_abc
     (a,b,c), and the origin shift (ox,oy,oz) is displayed in the
     lattice coordinates of the current setting. The Jones faithful
     notation and possible values are identical to those of
-    symCIF:_space_group.transform_Pp_abc, except that the point and
+    coreCIF:_space_group.transform_Pp_abc, except that the point and
     translational components are separated by a semicolon.
 
-    Analogous tags: symCIF:_space_group.transform_Pp_abc.
+    Analogous tags: coreCIF:_space_group.transform_Pp_abc.
 
     Ref: 'Magnetic Group Tables' by D. B. Litvin at
     https://www.iucr.org/publ/978-0-9553602-2-0.
@@ -4344,7 +4344,7 @@ save_space_group_magn_ssg_transforms.pp_superspace
     translation, and the point and translational components
     are now separated with a semicolon.
 
-    Analogous tags: symCIF:_space_group.transform_Pp_abc.
+    Analogous tags: coreCIF:_space_group.transform_Pp_abc.
 ;
     _name.category_id             space_group_magn_ssg_transforms
     _name.object_id               Pp_superspace
@@ -4572,11 +4572,11 @@ save_space_group_magn_transforms.pp_abc
     combinations of the current basis vectors (a,b,c), and the origin
     shift (ox,oy,oz)  is displayed in the lattice coordinates of the
     current setting. The Jones faithful notation and possible values
-    are identical to those of symCIF:_space_group_transform_Pp_abc,
+    are identical to those of coreCIF:_space_group.transform_Pp_abc,
     except that the point and translational components are separated
     by a semicolon.
 
-    Analogous tags: symCIF:_space_group.transform_Pp_abc.
+    Analogous tags: coreCIF:_space_group.transform_Pp_abc.
 ;
     _name.category_id             space_group_magn_transforms
     _name.object_id               Pp_abc
@@ -5412,7 +5412,7 @@ save_
        _atom_site_moment.Cartn* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2026-07-07
+         0.9.9                    2026-07-16
 ;
        Added _structure.id key to ATOM_SITE_MOMENT, ATOM_SITE_ROTATION,
        ATOM_SITE_MOMENT_FOURIER, ATOM_SITE_MOMENT_SPECIAL_FUNC.
@@ -5489,4 +5489,6 @@ save_
 
        Added _space_group_magn_ssg_transforms.Pp by analogy with
        _space_group_magn_transforms.Pp.
+
+       Updated the remaining references from symCIF to coreCIF.
 ;
