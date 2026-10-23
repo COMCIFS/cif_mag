@@ -4099,7 +4099,7 @@ save_
 save_space_group_magn.transform_bns_pp_abc
 
     _definition.id                '_space_group_magn.transform_BNS_Pp_abc'
-    _definition.update            2024-01-19
+    _definition.update            2026-07-06
     _description.text
 ;
     This item specifies the transformation (P,p) of the basis
@@ -4126,12 +4126,20 @@ save_space_group_magn.transform_bns_pp_abc
     _type.container               Single
     _type.contents                Text
 
+    loop_
+      _description_example.case
+      _description_example.detail
+         a,b,c;1/4,0,0
+             "Transformation from OG 5.6.24 C_P2' to BNS 4.12 P_C2_1"
+         c,-b,a;0,1/4,0
+             "Transformation from OG 8.7.44 C_Pm' to BNS 7.31 P_Ac"
+
 save_
 
 save_space_group_magn.transform_og_pp
 
     _definition.id                '_space_group_magn.transform_OG_Pp'
-    _definition.update            2016-10-10
+    _definition.update            2026-07-06
     _description.text
 ;
     This item specifies the transformation (P,p) of the basis
@@ -4161,12 +4169,24 @@ save_space_group_magn.transform_og_pp
     _type.contents                Real
     _units.code                   none
 
+    loop_
+      _description_example.case
+      _description_example.detail
+         [
+          [1  0  0  -0.25]  [0  1  0  0]  [0  0  1  0]  [0  0  0  1]
+         ]
+             "Transformation from BNS 4.12 P_C2_1 to OG 5.6.24 C_P2'"
+         [
+          [0  0  1  0]  [0  -1  0  -0.25]  [1  0  0  0]  [0  0  0  1]
+         ]
+             "Transformation from BNS 7.31 P_Ac to OG 8.7.44 C_Pm'"
+
 save_
 
 save_space_group_magn.transform_og_pp_abc
 
     _definition.id                '_space_group_magn.transform_OG_Pp_abc'
-    _definition.update            2024-01-19
+    _definition.update            2026-07-06
     _description.text
 ;
     This item specifies the transformation (P,p) of the basis
@@ -4193,6 +4213,14 @@ save_space_group_magn.transform_og_pp_abc
     _type.container               Single
     _type.contents                Text
 
+    loop_
+      _description_example.case
+      _description_example.detail
+         a,b,c;-1/4,0,0
+             "Transformation from BNS 4.12 P_C2_1 to OG 5.6.24 C_P2'"
+         c,-b,a;0,-1/4,0
+             "Transformation from BNS 7.31 P_Ac to OG 8.7.44 C_Pm'"
+
 save_
 
 save_SPACE_GROUP_MAGN_SSG_TRANSFORMS
@@ -4200,7 +4228,7 @@ save_SPACE_GROUP_MAGN_SSG_TRANSFORMS
     _definition.id                SPACE_GROUP_MAGN_SSG_TRANSFORMS
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2026-06-04
+    _definition.update            2026-07-06
     _description.text
 ;
     This loop provides a list of matrix transformations to one or
@@ -4219,6 +4247,18 @@ save_SPACE_GROUP_MAGN_SSG_TRANSFORMS
       _category_key.name
          '_space_group_magn_ssg_transforms.id'
          '_space_group_magn_ssg_transforms.space_group_magn_id'
+
+    _description_example.case
+;
+    loop_
+      _space_group_magn_ssg_transforms.id
+      _space_group_magn_ssg_transforms.Pp_superspace
+      _space_group_magn_ssg_transforms.source
+      _space_group_magn_ssg_transforms.description
+         1 a1,a2,a3,a4,a5;0,0,0,0,0         ISO(3+d)D-MAG  .
+         2 a1,a2,-a3,-a3+a4,a5;0,0,0,0,0    . "data_block_1173"
+         3 -a1,-a2,a3,a3+a4,a5;0,0,0,7/8,0  . "<specific literature citation>"
+;
 
 save_
 
@@ -4437,7 +4477,7 @@ save_SPACE_GROUP_MAGN_TRANSFORMS
     _definition.id                SPACE_GROUP_MAGN_TRANSFORMS
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2026-06-04
+    _definition.update            2026-07-06
     _description.text
 ;
     This category provides a list of matrix transformations to multiple
@@ -4459,14 +4499,13 @@ save_SPACE_GROUP_MAGN_TRANSFORMS
        loop_
          _space_group_magn_transforms.id
          _space_group_magn_transforms.Pp_abc
-         _space_group_magn_transforms.description
          _space_group_magn_transforms.source
-            1  'a,b,c;0,0,0'    .            "data_block_CURRENT"
-            2  'a/2,b,c;0,0,0'  "data_block_205763"  .
-            3  'a,b,c;0,0,0'    .                    "BNS"
-            4  'a/2,b,c;0,0,0'  .                    "OG"
-            5  'a/4,b,c;0,0,0'
-           "literature citation to a nuclear parent structure"  .
+         _space_group_magn_transforms.description
+            1  'a,b,c;0,0,0'    BNS     .
+            2  'a,b,c;0,0,0'    BNS     .
+            3  'a/2,b,c;0,0,0'  OG      .
+            4  'a/2,b,c;0,0,0'  .       data_block_205763
+            5  'a/4,b,c;0,0,0'  .       "<specific literature citation>"
 ;
 
 save_
@@ -4525,7 +4564,7 @@ save_
 save_space_group_magn_transforms.pp
 
     _definition.id                '_space_group_magn_transforms.Pp'
-    _definition.update            2016-06-23
+    _definition.update            2026-07-06
     _description.text
 ;
     This item specifies the transformation (P,p) of the basis
@@ -4554,12 +4593,24 @@ save_space_group_magn_transforms.pp
     _type.contents                Real
     _units.code                   none
 
+    loop_
+      _description_example.case
+      _description_example.detail
+         [
+          [1  0  0  0.25]  [0  1  0  0]  [0  0  1  0]  [0  0  0  1]
+         ]
+             "Transformation from OG 5.6.24 C_P2' to BNS 4.12 P_C2_1"
+         [
+          [0  0  1  0]  [0  -1  0  0.25]  [1  0  0  0]  [0  0  0  1]
+         ]
+             "Transformation from OG 8.7.44 C_Pm' to BNS 7.31 P_Ac"
+
 save_
 
 save_space_group_magn_transforms.pp_abc
 
     _definition.id                '_space_group_magn_transforms.Pp_abc'
-    _definition.update            2026-05-28
+    _definition.update            2026-07-06
     _description.text
 ;
     This item specifies the transformation (P,p) of the basis
@@ -4584,6 +4635,14 @@ save_space_group_magn_transforms.pp_abc
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
+
+    loop_
+      _description_example.case
+      _description_example.detail
+         a,b,c;1/4,0,0
+             "Transformation from OG 5.6.24 C_P2' to BNS 4.12 P_C2_1"
+         c,-b,a;0,1/4,0
+             "Transformation from OG 8.7.44 C_Pm' to BNS 7.31 P_Ac"
 
 save_
 
@@ -5485,6 +5544,7 @@ save_
        2026-06-15: added _atom_sites_moment_fourier.structure_id as linked
        key data name.
 
+       2026-07-06: added transformation examples.
        Added author list.
 
        Added _space_group_magn_ssg_transforms.Pp by analogy with
