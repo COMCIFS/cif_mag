@@ -10,8 +10,8 @@ data_CIF_MAG
 
     _dictionary.title             CIF_MAG
     _dictionary.class             Instance
-    _dictionary.version           0.9.9
-    _dictionary.date              2026-07-16
+    _dictionary.version           1.0.0
+    _dictionary.date              2026-10-29
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   4.2.0
@@ -5471,10 +5471,11 @@ save_
        _atom_site_moment.Cartn* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2026-07-16
+         1.0.0                    2026-10-29
 ;
        Added _structure.id key to ATOM_SITE_MOMENT, ATOM_SITE_ROTATION,
-       ATOM_SITE_MOMENT_FOURIER, ATOM_SITE_MOMENT_SPECIAL_FUNC.
+       ATOM_SITE_MOMENT_FOURIER, ATOM_SITE_MOMENT_SPECIAL_FUNC,
+       ATOM_SITES_MOMENT_FOURIER.
 
        Added key to SPACE_GROUP_MAGN, and linked key data names to:
        SPACE_GROUP_MAGN_SSG_TRANSFORMS
@@ -5488,67 +5489,31 @@ save_
        Added non-key _structure.space_group_magn_id to link magnetic space
        group to structure.
 
-       Changed several instances of "Jones-Faithful notation" to
-       "Jones faithful notation".
-
-       Changed the object id of the _parent_space_group.name_H-M_alt data item.
-
-       Corrected definitions of _parent_space_group.child_transform_pp_abc and
-       _parent_space_group.transform_pp_abc. Changed the purpose of all *_pp_abc
-       items to 'Encode'.
-
        Deprecated _space_group_magn.point_group_name and
        _space_group_magn.point_group_number in favour of the newly added
        _space_group_magn.point_group_name_H-M and
        _space_group_magn.point_group_number_Litvin.
 
-       Declared the dictionary as conformant to the DDLm reference dictionary
-       version 4.1.0.
-
        Added evaluation method for _atom_site_Fourier_wave_vector.q3_coeff.
-
-       Restricted the values of _atom_site_moment_Fourier.wave_vector_seq_id
-       to positive integers.
 
        Updated definitions and added examples for the
        _atom_site_moment_Fourier_param.cos_symmform,
        _atom_site_moment_Fourier_param.sin_symmform,
        _atom_site_moment_Fourier_param.modulus_symmform and
        _atom_site_moment_Fourier_param.phase_symmform data items.
+
        Update example of the ATOM_SITE_MOMENT_FOURIER_PARAM category.
 
-       2024-03-13 editorial changes by B. McMahon:
-       Frame header for _space_group_magn.hall_symbol fixed (save__ -> save_).
+       Many style changes, typos and spelling errors fixed. Clarified
+       crystalaxis and Cartn definitions for rotations and moments.
 
-       Analogous tags in symCIF changed to coreCIF where appropriate. Not
-       all symCIF items yet in coreCIF.
+       All references to symCIF changed to coreCIF.
 
-       Many style changes, typos and spelling errors fixed.
+       Removed ATOM_SITE_FOURIER_WAVE_VECTOR category because it is defined
+       in cif_ms.dic.
 
-       2024-04-03 (bm): Added *_su terms for Measurand quantities.
-
-       Renamed the dictionary from 'MAGNETIC_CIF' to 'CIF_MAG'.
-       Renamed the head category from 'MAGNETIC' to 'CIF_MAG_HEAD'.
-
-       Updated the CIF_MS dictionary import statement with the new head
-       category name.
-
-       Clarified the crystalaxis and Cartn definitions for rotations and
-       moments.
-
-       2025-12-04 (bm): Removed ATOM_SITE_FOURIER_WAVE_VECTOR category
-       because it is defined in cif_ms.dic.
-
-       Improved clarity in transform_Pp_abc definitions.
-
-       2026-06-15: added _atom_sites_moment_fourier.structure_id as linked
-       key data name.
-
-       2026-07-06: added transformation examples.
-       Added author list.
+       Added transformation examples and author list.
 
        Added _space_group_magn_ssg_transforms.Pp by analogy with
        _space_group_magn_transforms.Pp.
-
-       Updated the remaining references from symCIF to coreCIF.
 ;
