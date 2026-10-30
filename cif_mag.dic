@@ -10,8 +10,8 @@ data_CIF_MAG
 
     _dictionary.title             CIF_MAG
     _dictionary.class             Instance
-    _dictionary.version           1.0.0
-    _dictionary.date              2026-10-29
+    _dictionary.version           1.1.0-dev
+    _dictionary.date              2026-10-30
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   4.2.0
@@ -5516,4 +5516,9 @@ save_
 
        Added _space_group_magn_ssg_transforms.Pp by analogy with
        _space_group_magn_transforms.Pp.
+;
+         1.1.0-dev                2026-10-30
+;
+       # Add summary of any updates below, updating date above. Remove this
+       # comment before release.
 ;
